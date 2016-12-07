@@ -1,0 +1,8 @@
+var process = require('child_process');
+
+process.exec('hexo server -p 3092', function(error, stdout, stderr) {
+	if (error !== null) {
+		console.log('exec error: ' + error);
+	}
+	console.log('blog is listen 3092');
+});
