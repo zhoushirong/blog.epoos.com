@@ -1,5 +1,4 @@
 # blog.epoos.com
-blog
- 
 
-test
+this is a blog  
+
