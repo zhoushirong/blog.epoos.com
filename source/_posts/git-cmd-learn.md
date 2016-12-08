@@ -1,9 +1,15 @@
 ---
 layout: default
 title: 常用的git操作命令
+category: 工具
+tag: git命令行
 ---
 
 ## {{page.title}}
+
+git是一种分布式版本管理工具，他有着强大的开源社区github，结合smartgit能够快速、高效、准确的对分支进行切换。
+但是如果仅仅只是使用smartgit图形界面有时候也很不方便，至少在服务器上就没招了，因此了解一些git bash的基本命令是十分必要的。
+接下来会介绍一些常用的基本的git bash命令。
 
 ### 配置git用户名和邮箱
 
