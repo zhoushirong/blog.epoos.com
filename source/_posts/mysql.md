@@ -1,17 +1,10 @@
 ---
 layout: default
 title: mysql入门
-category: 工具
-tag: mysql
+date: 2016-11-16
 ---
 
-Mysql是最流行的关系型数据库管理系统，尤其是在web应用方面。
-Mysql是一个关系型数据库管理系统，由瑞典MySQL AB公司开发，目前属于Oracle公司。MySQL是一种关联数据库管理系统，关联数据库将数据保存在不同的表中，而不是将所有数据放在一个大仓库内，这样就增加了速度并提高了灵活性。
-Mysql是开源的、免费的、支持大型的数据库
-Mysql使用标准的SQL数据语言形式。
-下面是mysql的基本使用。
-
-
+## {{page.title}}
 
 ps: ${xxx}表示xxx是变量
 
@@ -52,6 +45,14 @@ sudo vim my.cnf
 [mysqld]
 skip-grant-tables
 lower_case_table_names=1
+```
+
+权限不足的时候可以创建一个账号
+
+``` sql
+CREATE USER 'golden'@'localhost' IDENTIFIED BY 'password';
+GRANT ALL PRIVILEGES ON * . * TO 'golden'@'localhost';
+FLUSH PRIVILEGES;
 ```
 
 --------------

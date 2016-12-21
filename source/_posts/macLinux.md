@@ -1,13 +1,10 @@
 ---
 layout: default
 title: 常用mac终端命令
-category: 工具
-tag: macTerminal
+date: 2016-03-29
 ---
 
-mac搭配的系统是基于linux内核开发的，因此大部分linux的命令都适用于mac上，因此对于mac用户来说，使用命令行操作变得非常的时髦，非常的高大上。
-下面介绍一下基本的mac命令操作。
-
+## {{page.title}}
 
 ```
 cd —— 进入目录
@@ -35,7 +32,6 @@ whoami —— 当前正在操作的用户名
 ### 登录远程机器：
 
 ```
-
 ssh xxx@ip -p 端口
 
 ```
@@ -43,7 +39,6 @@ ssh xxx@ip -p 端口
 ### 操作文件
 
 ```
-
 mkdir 文件名 —— 建立新目录
 
 rm -rf —— 删除文件夹
@@ -57,7 +52,6 @@ pwd —— 显示当前文件夹路径
 ### vim命令：
 
 ```
-
 i —— 插入模式
 
 esc —— 退出
@@ -74,8 +68,7 @@ ctl+r 和u相反
 
 ### 一些快捷键
 
-```
-
+``` html
 command + t —— 在终端新打开一个终端
 
 command + c —— 复制
@@ -98,7 +91,7 @@ fn + delete —— 向后删除
 
 ### 解压.gz文件
 
-```
+``` shell
 gunzip filename.gz
 
 gunzip -g filename.gz
@@ -109,8 +102,7 @@ or
 
 ### 将 /tmp/etc.tar.gz 文件解压缩在 /usr/local/src 底下
 
-```
-
+``` shell
 [root@linux ~]# cd /usr/local/src
 
 [root@linux src]# tar -zxvf /tmp/etc.tar.gz

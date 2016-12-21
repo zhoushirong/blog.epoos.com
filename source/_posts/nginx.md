@@ -1,15 +1,10 @@
 ---
 layout: default
 title: nginxLearn
-category: 工具
-tag: nginx
+date: 2016-09-29
 ---
 
-Nginx（发音同engine x）是一个网页服务器，它能反向代理HTTP, HTTPS, SMTP, POP3, IMAP的协议链接，以及一个负载均衡器和一个HTTP缓存。
-Nginx在官方测试的结果中，能够支持五万个平行连接，而在实际的运作中，可以支持二万至四万个平行链接。
-整体采用模块化设计是nginx的一个重大特点，甚至http服务器核心功能也是一个模块。旧版本的nginx的模块是静态的，添加和删除模块都要对nginx进行重新编译，1.9.11以及更新的版本已经支持动态模块加载。 
-—— 来自维基百科
-下面是一些基本的Nginx配置。
+## {{page.title}}
 
 ### 什么是Nginx
 
@@ -123,7 +118,20 @@ nginx -s reload
 #### 配置nginx
 
 
-...未完待续...
+
+
+### ubuntu系统
+
+安装
+
+``` html
+sudo apt-get install nginx
+
+```
+
+
+
+
 
 
 -------------------------------
