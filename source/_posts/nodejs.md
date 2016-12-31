@@ -6,7 +6,6 @@ category: 服务端
 tag: js nodejs
 ---
 
-## {{page.title}}
 
 JS是世界上最好的语言。
 不对，说错了，PHP才是世界上最好的语言。

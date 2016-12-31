@@ -6,14 +6,12 @@ category: 工具
 tag: gulp
 ---
 
-## {{page.title}}
 
 最近准备入手小游戏，队友们的技术栈用到了Gulp+Webpack+ES6，这里学习一下这些技术。
 Gulp本身只有几个入口，支持他拥有强大功能的是各种各样的插件。
 Gulp的使用看起来非常简单，只需要一个一个任务链式执行就可以了，它还可以与Webpack结合起来使用
 比如将Webpack作为一个插件来处理ES6转换为ES5的操作。
 下面记录一下Gulp的API以及一些用到的插件。
-
 
 
 ``` javascript
