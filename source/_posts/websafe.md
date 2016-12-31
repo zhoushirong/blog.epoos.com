@@ -3,6 +3,7 @@ layout: default
 title: web安全问题
 category: 前端
 tag: js ajax cors web安全 跨域请求
+date: 2016/12/25
 ---
 
 Web安全是一个如何强调都不为过的事情，没有发生就什么事都没有，一旦发生了将可能导致不可估量的损失。

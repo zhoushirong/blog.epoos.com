@@ -1,7 +1,9 @@
 ---
 layout: default
 title: 服务器端搭建node环境的网站
-date: 2016-10-23
+date: 2016/10/23
+category: 服务端
+tag: js nodejs
 ---
 
 ## {{page.title}}

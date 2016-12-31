@@ -1,7 +1,9 @@
 ---
 layout: default
-title: javascriptObject
-date: 2016-10-11
+title: javascript对象
+date: 2016/10/11
+category: 前端
+tag: js
 ---
 
 ## {{page.title}}

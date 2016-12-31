@@ -1,7 +1,9 @@
 ---
 layout: default
-title: nodeMongodbLearn
-date: 2016-04-30
+title: nodeMongodb入门
+date: 2016/04/30
+category: 服务端
+tag: mongodb 数据库
 ---
 
 ## {{page.title}}

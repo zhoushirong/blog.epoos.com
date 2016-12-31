@@ -1,10 +1,11 @@
 ---
 layout: default
-title: createjs学习
-date: 2016-12-20
+title: CreateJS学习
+date: 2016/12/20
+category: 前端
+tag: js
 ---
 
-## {{page.title}}
 
 最近准备入手小游戏，队友们的技术栈用到了createjs，这里学习一下createjs。
 CreateJS是基于HTML5开发的一套模块化的库和工具。基于这些库，可以非常快捷地开发出基于HTML5的游戏、动画和交互应用。

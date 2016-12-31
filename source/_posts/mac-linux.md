@@ -1,7 +1,9 @@
 ---
 layout: default
 title: 常用mac终端命令
-date: 2016-03-29
+date: 2016/03/29
+category: 服务端
+tag: mac linux
 ---
 
 ## {{page.title}}
@@ -109,11 +111,6 @@ or
 
 ```
 
-
-
-
-### 安装redis教程传送门
-<a href="http://www.mamicode.com/info-detail-526405.html" target="_blank">http://www.mamicode.com/info-detail-526405.html</a>
 
 
 

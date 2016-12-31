@@ -1,7 +1,9 @@
 ---
 layout: default
-title: reactLearn
-date: 2016-09-25
+title: react入门
+date: 2016/09/25
+category: 前端
+tag: js react
 ---
 
 ## {{page.title}}

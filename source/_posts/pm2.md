@@ -1,7 +1,9 @@
 ---
 layout: default
-title: nodeAndPm2
-date: 2016-03-29
+title: pm2入门
+date: 2016/03/29
+category: 工具
+tag: pm2 nodejs
 ---
 
 ## {{page.title}}

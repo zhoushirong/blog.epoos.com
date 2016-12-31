@@ -1,7 +1,9 @@
 ---
 layout: default
-title: es6LLearn
-date: 2016-08-29
+title: es6入门
+date: 2016/08/29
+category: 前端
+tag: js es6
 ---
 
 ## {{page.title}}

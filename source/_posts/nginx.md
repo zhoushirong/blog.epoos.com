@@ -1,12 +1,15 @@
 ---
 layout: default
-title: nginxLearn
-date: 2016-09-29
+title: Nginx入门
+category: 服务端
+tag: nginx
+date: 2016/12/25
 ---
 
-## {{page.title}}
-
-### 什么是Nginx
+Nginx（发音同engine x）是一个网页服务器，它能反向代理HTTP, HTTPS, SMTP, POP3, IMAP的协议链接，以及一个负载均衡器和一个HTTP缓存。
+Nginx在官方测试的结果中，能够支持五万个平行连接，而在实际的运作中，可以支持二万至四万个平行链接。
+整体采用模块化设计是nginx的一个重大特点，甚至http服务器核心功能也是一个模块。旧版本的nginx的模块是静态的，添加和删除模块都要对nginx进行重新编译，1.9.11以及更新的版本已经支持动态模块加载。 
+—— 来自维基百科
 
 Nginx 最常用的功能就是提供反向代理服务
 
@@ -23,99 +26,102 @@ Nginx 最常用的功能就是提供反向代理服务
 负载均衡：我们可以水平扩展后端真正提供服务的服务器数量，代理按照规则转发请求到各个服务端，使得各个服务器负载接近均衡
 
 
-### 安装
+### 在mac osx
 
-#### 在mac osx安装nginx 用brew
+1.brew
 
-##### 搜索软件
-
-``` html
-brew search nginx
+``` shell
+brew list 查看brew安装的软件列表
+brew search xx // 搜索
+brew install xx // 安装
+brew info xx //查看xx信息
+brew uninstall xx //卸载
 ```
 
-##### 安装、卸载软件
+1.用brew安装nginx
 
-``` html
-brew install nginx
-brew uninstall nginx
+``` shell
+brew nginx
 ```
 
-##### 升级软件
+2.启动nginx
 
-``` html
-brew update
+``` shell
+sudo nginx
 ```
 
-##### 查看安装信息、安装列表
+3.查看nginx的进程
 
-``` html
-brew info nginx
-brew list
-```
----------------------------------
-
-##### 安装nginx
-
-``` html
-sudo brew install nginx
+``` shell
+sudo ps aux | grep nginx
 ```
 
-##### 启动nginx
-
-``` html
-sudo brew servers start nginx
-```
 访问此地址查看是否启动nginx成功：http://localhost:8080/
 
-##### 查看nginx版本
+4.查看nginx版本
 
-``` html
+``` shell
 nginx -v
 ```
 
-##### 关闭nginx服务
+5.停止nginx
 
-``` html
-sudo brew servers stop nginx
-```
-
-##### 停止nginx
-
-``` html
+``` shell
 nginx -s stop
 ```
 
-##### 重新加载nginx
+6.重新加载nginx
 
-``` html
+``` shell
 nginx -s reload
 ```
 
-------------------------------
+7.重启nginx
 
-### 配置nginx
+``` shell
+sudo nginx -s stop && sudo nginx
+```
 
-#### 文件目录
 
-##### nginx安装目录位置
+ps:如果启动或重启的时候遇到pid报错则按如下方法杀掉nginx主进程
+
+在进程列表里面找到master进程，他的编号就是主进程号了。
+
+步骤一：询nginx主进程
+
+``` shell
+ps -ef | grep nginx
+```
+
+步骤2：发送信号
+
+``` html
+从容停止：sudo kill -QUIT 主进程号
+
+快速停止：sudo kill -TERM 主进程号
+
+强制停止nginx：sudo pkill -9 nginx
+```
+
+8.nginx安装目录位置
 
 ``` html
 /usr/local/Cellar/nginx
 ```
 
-#### nginx配置文件目录
+9.nginx配置文件目录
 
 ``` html
 /usr/local/etc/nginx
 ```
 
-##### 系统host位置
+10.系统host位置
 
 ``` html
 /private/etc/host
 ```
 
-#### 配置nginx
+
 
 
 
@@ -127,6 +133,12 @@ nginx -s reload
 ``` html
 sudo apt-get install nginx
 
+```
+
+### 查看nginx是否启动
+
+``` html
+ps -ef|grep nginx
 ```
 
 

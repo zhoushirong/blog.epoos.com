@@ -2,7 +2,7 @@
 layout: default
 title: 常用mac终端命令
 category: 工具
-tag: macTerminal
+tag: mac terminal
 ---
 
 mac搭配的系统是基于linux内核开发的，因此大部分linux的命令都适用于mac上，因此对于mac用户来说，使用命令行操作变得非常的时髦，非常的高大上。

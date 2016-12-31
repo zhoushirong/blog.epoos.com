@@ -1,7 +1,10 @@
+
 ---
 layout: default
-title: videoAndAudio
-date: 2016-09-13
+title: videoAndAudio入门
+date: 2016/09/13
+category: 前端
+tag: video audio
 ---
 
 ## {{page.title}}

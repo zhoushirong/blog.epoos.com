@@ -1,14 +1,15 @@
 ---
 layout: default
-title: gulp学习
-date: 2016-12-20
+title: GULP入门
+date: 2016/12/20
+category: 工具
+tag: gulp
 ---
 
 ## {{page.title}}
 
 最近准备入手小游戏，队友们的技术栈用到了gulp+webpack+es6，这里学习一下这些技术。
 gulp本身只有几个入口，支持他拥有强大功能的是各种各样的插件。
-
 
 
 ``` javascript
@@ -159,6 +160,11 @@ https://github.com/sindresorhus/gulp-rev
 https://github.com/shonny-ua/gulp-rev-collector
 
 
+#### browser-sync插件
+
+浏览器实时更新(Keep multiple browsers & devices in sync when building websites.)
+
+https://github.com/browsersync/browser-sync
 
 
 

@@ -1,7 +1,9 @@
 ---
 layout: default
 title: css3Transition
-date: 2016-04-07
+category: 前端
+tag: css3 transition
+date: 2016/04/07
 ---
 
 ## {{page.title}}

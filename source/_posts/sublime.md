@@ -1,7 +1,9 @@
 ---
 layout: default
-title: sublimeText3Learn
-date: 2016-04-12
+title: sublime入门
+date: 2016/04/12
+category: 工具
+tag: sublimeText3
 ---
 
 *下列快捷键验证使用环境为mac，如果是win环境不支持，可以将commond键换成ctl试试
