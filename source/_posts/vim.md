@@ -1,6 +1,6 @@
 ---
 layout: default
-title: vim入门
+title: Vim入门
 category: 工具
 tag: vim
 date: 2016/12/31

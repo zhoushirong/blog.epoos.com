@@ -3,7 +3,7 @@ title: hexo使用指南
 layout: timeline
 comments: true
 category: 其他
-tag: hexo使用指南
+tag: hexo
 date: 1990/1/1 00:00:00
 
 ---

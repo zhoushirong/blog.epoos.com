@@ -1,16 +1,17 @@
 ---
 layout: default
-title: javascript对象
+title: Javascript对象
 date: 2016/10/11
 category: 前端
 tag: js
 ---
 
-## {{page.title}}
+《JavaScript高级程序设计学习笔记》之Javascript对象。
+面向对象（Object-Oriented, OO）的语言有一个标志，那就是它们都有类的概念
+而通过类可以创建任意多个具有相同属性和方法的对象。
+ECMAScript没有类的概念，因此它的对象也与机遇类的语言中的对象有所不同
+**ES6新增了对象Class的语法糖，这里不讨论ES6**
 
-《JavaScript高级程序设计学习笔记》
-
-面向对象（Object-Oriented, OO）
 
 ### 理解对象
 

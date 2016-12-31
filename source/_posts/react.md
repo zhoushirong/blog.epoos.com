@@ -1,12 +1,17 @@
 ---
 layout: default
-title: react入门
+title: React入门
 date: 2016/09/25
 category: 前端
 tag: js react
 ---
 
-## {{page.title}}
+React是当下最流行的Javascript框架之一。
+与其它框架相比React并不直接对DOM进行操作，而是引用了虚拟DOM的概念。
+在UI渲染过程中，React通过在虚拟DOM中的微操作来实对现实际DOM的局部更新。
+React使得开发人员能够开心的进行模块化，同时具有跨平台的特性。
+但是并不是‘Write once, run anywhere’
+它提倡的是‘Learn once, write anywhere’
 
 ### Flux
 

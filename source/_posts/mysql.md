@@ -1,6 +1,6 @@
 ---
 layout: default
-title: MYSQL入门
+title: Mysql入门
 category: 服务端
 tag: mysql 数据库
 date: 2016/12/25
@@ -19,13 +19,11 @@ ps: ${xxx}表示xxx是变量
 用brew安装mysql
 
 安装mysql
-
 ``` html
 $ brew install mysql
 ```
 
 设置 MySQL 用户以及数据存放地址
-
 ``` html
 $ unset TMPDIR
 
@@ -33,7 +31,6 @@ $ mysql_install_db --verbose --user=`whoami` --basedir="$(brew --prefix mysql)" 
 ```
 
 忘记mysql数据库密码
-
 ``` sql
 update user set authentication_string=password('my_password') where user='root';
 ```
@@ -41,7 +38,6 @@ update user set authentication_string=password('my_password') where user='root';
 遇到的问题
 
 错误码：ERROR 1045 (28000)
-
 ``` html
 cd /etc
 
@@ -54,28 +50,25 @@ lower_case_table_names=1
 ```
 
 权限不足的时候可以创建一个账号
-
 ``` sql
 CREATE USER 'golden'@'localhost' IDENTIFIED BY 'password';
 GRANT ALL PRIVILEGES ON * . * TO 'golden'@'localhost';
 FLUSH PRIVILEGES;
 ```
 
---------------
+---
 
 启动mysql
-
 ``` html
 $ mysql.server start
 ```
-开机启动mysql
 
+开机启动mysql
 ``` html
 /etc/init.d/mysqld start
 ```
 
 通过sql文件执行脚本
-
 ``` sql
 source  /Users/zsr/learn/crawler/sql/createtable.sql;
 
@@ -85,43 +78,37 @@ mysql -D samp_db -u root -p < createtable.sql
 ```
 
 登录mysql
-
 ``` sql
 mysql -u root -p
 
 输入mysql密码
 ```
 
----------------
+---
 
 创建一个数据库，设置character是为了兼容汉字
-
 ``` sql
 create database ${newdatabasename} character set gbk;
 ```
 
 查看所有的数据库
-
 ``` sql
 show databases;
 ```
 
 删除数据库
-
 ``` sql
 drop database ${databasename};
 ```
 
 选中testdb数据库
-
 ``` sql
 use testdb;
 ```
 
----------------
+---
 
 创建一张表
-
 ``` sql
 use ${databasename}
 
@@ -136,45 +123,38 @@ create table students
 ```
 
 修改表名
-
 ``` sql
 alter table ${oldtablename} rename to ${newtablename};
 ```
 
 查看所有表
-
 ``` sql
 show tables;
 ```
 
 删除表
-
 ``` sql
 drop table ${tabename};
 ```
 
 显示数据表的属性，属性类型，主键信息
-
 ``` sql
 show columns from students
 ```
 
----------------
+---
 
 查看列
-
 ``` sql
 desc ${tablename};
 ```
 
 添加列
-
 ``` sql
 alter table ${tablename} add column ${newcolumnname} verchar(30);
 ```
 
 删除列
-
 ``` sql
 alter table ${tablename} drop column;
 
@@ -182,47 +162,40 @@ alter table ${tablename} drop column ${columnname};
 ```
 
 修改列
-
 ``` sql
 alter table ${tablename} change ${ondcolumnname} ${newcolumnname} int; 
 ```
 
 修改列属性
-
 ``` sql
 alter table ${tablename} modify ${oldattr} char(80);
 ```
 
----------------
+---
 
 增加数据
-
 ``` sql 
 insert into ${tablename} values (${column1}, ${column2}); /*如果自增id，则column1为0*/
 ```
 
 修改数据
-
 ``` sql
 update ${tablename} set ${attr}=${newAttr} where ${id=3}; /*id=3代表查询条件*/
 ```
 
 查询数据
-
 ``` sql
 select * from ${tablename} where ${id=3};
 ```
 
 删除数据
-
 ``` sql
 delete from ${tablename} where ${id=3};
 ```
 
-------------------
+---
 
 详细的常用查询操作
-
 1.查询从第n条开始的m条数据
 
 ``` sql
@@ -230,7 +203,6 @@ select * from test_table limit n,m;
 ```
 
 查看数据库编码
-
 ``` sql
 show variables like 'character%'; 
 ```

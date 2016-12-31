@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 常用LINUX命令
+title: 常用Linux命令
 date: 2016/12/30
 category: 服务端
 tag: linux

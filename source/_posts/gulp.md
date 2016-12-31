@@ -1,6 +1,6 @@
 ---
 layout: default
-title: GULP入门
+title: Gulp入门
 date: 2016/12/20
 category: 工具
 tag: gulp
@@ -8,8 +8,12 @@ tag: gulp
 
 ## {{page.title}}
 
-最近准备入手小游戏，队友们的技术栈用到了gulp+webpack+es6，这里学习一下这些技术。
-gulp本身只有几个入口，支持他拥有强大功能的是各种各样的插件。
+最近准备入手小游戏，队友们的技术栈用到了Gulp+Webpack+ES6，这里学习一下这些技术。
+Gulp本身只有几个入口，支持他拥有强大功能的是各种各样的插件。
+Gulp的使用看起来非常简单，只需要一个一个任务链式执行就可以了，它还可以与Webpack结合起来使用
+比如将Webpack作为一个插件来处理ES6转换为ES5的操作。
+下面记录一下Gulp的API以及一些用到的插件。
+
 
 
 ``` javascript
@@ -19,7 +23,7 @@ gulp.src(globs[, options])
 
 globs：一种匹配文件的规则。
 
----------
+---
 
 ``` javascript
 gulp.dest(path[, options])
@@ -28,7 +32,7 @@ gulp.dest(path[, options])
 
 文件被写入的路径是以所给的相对路径根据所给的目标目录计算而来。类似的，相对路径也可以根据所给的 base 来计算。 请查看上述的 gulp.src 来了解更多信息。
 
----------
+---
 
 ``` javascript
 gulp.task(name[, deps], fn)
@@ -37,7 +41,7 @@ gulp.task(name[, deps], fn)
 
 Orchestrator: 一个执行并发任务的库。
 
-----------
+---
 
 ``` javascript
 gulp.watch(glob[, opts], tasks)
@@ -63,7 +67,7 @@ gulp.watch('js/**/*.js', function(event) {
 });
 ```
 
-----------
+---
 
 
 
