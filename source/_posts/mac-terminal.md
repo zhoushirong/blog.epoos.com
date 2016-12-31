@@ -3,6 +3,7 @@ layout: default
 title: Mac终端入门
 category: 工具
 tag: mac terminal
+date: 2016/12/05
 ---
 
 mac搭配的系统是基于linux内核开发的，因此大部分linux的命令都适用于mac上
