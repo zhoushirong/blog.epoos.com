@@ -6,11 +6,11 @@ category: 工具
 tag: webpack
 ---
 
-最近准备入手小游戏，队友们的技术栈用到了Gulp+Webpack+ES6，这里学习一下这些技术。
+最近准备入手小游戏，技术栈用到了Gulp+Webpack+ES6，这里学习一下这些技术。
 Webpack是一个前端资源加载以及打包工具。
 只需要简单的配置即可实现前端各种工程化的操作。
-Webpack结合其loader、plugin能够完成复杂的前端自动化构建。
-除此之外它还可以与gulp等其它工程化工具结合使用。
+Webpack结合其Loader、Plugin能够完成复杂的前端自动化构建。
+除此之外它还可以与Gulp等其它工程化工具结合使用。
 
 
 
