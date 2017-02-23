@@ -206,3 +206,19 @@ select * from test_table limit n,m;
 ``` sql
 show variables like 'character%'; 
 ```
+
+查看数据库位置
+``` sql
+show variables like 'datadir%'
+```
+# 备份数据
+``` sql
+mysqldump -h123.207.236.xxx -uusername -ppassword dbname > epoos.sql
+```
+
+# 还原数据
+``` sql
+mysql -h127.0.0.1 -uroot -p123456 epoos < epoos.sql
+```
+* 或者先创建新的数据库，然后use创建的数据库，执行备份的sql即可
+

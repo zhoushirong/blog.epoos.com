@@ -7,8 +7,8 @@ tag: js ajax cors 跨域请求
 
 CORS是一个W3C标准，全称是"跨域资源共享"（Cross-origin resource sharing）。
 它允许浏览器向跨源服务器，发出XMLHttpRequest请求，从而克服了AJAX只能同源使用的限制。
-
-
+跨域请求是非常常见的操作，尤其是在web应用上面，但是由于历史原因，跨域请求的实现是坎坷的。
+下面是常用的几种跨域请求数据的实现。
 
 ### Ajax的实现原理
 

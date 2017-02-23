@@ -24,6 +24,8 @@ JS是世界上最好的语言。
 首先将nodejs的源码安装包下载下来，然后解压编译
 
 ``` html
+#  apt-get update
+#  wget https://nodejs.org/dist/v6.9.5/node-v6.9.5.tar.gz
 #  tar xvf node-v4.6.1.tar.gz 
 #  cd node-v4.6.1 
 #  ./configure 
