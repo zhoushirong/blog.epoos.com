@@ -33,6 +33,8 @@ let config = {
         '.babelrc',
         '.editorconfig',
         '.gitignore',
+        '.git/**/*',
+        'code/**/*',
         'README.md',
       ]
     }),

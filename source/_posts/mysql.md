@@ -212,13 +212,21 @@ show variables like 'character%';
 show variables like 'datadir%'
 ```
 # 备份数据
-``` sql
-mysqldump -h123.207.236.xxx -uusername -ppassword dbname > epoos.sql
+``` html
+mysqldump -udbusername -pdbpwd dbname > ./epoos.sql
+scp -r root@xxx.193.173.xx:/xxx/xxx/xxx/epoos.sql /Users/zsr/epoos 
 ```
 
 # 还原数据
 ``` sql
 mysql -h127.0.0.1 -uroot -p123456 epoos < epoos.sql
 ```
-* 或者先创建新的数据库，然后use创建的数据库，执行备份的sql即可
+
+# 如果上面的还原功能不好使，可以
+``` html
+1.创建新数据库 newdb
+2.use newdb
+3.执行备份的sql文件
+```
+
 
