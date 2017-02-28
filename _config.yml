@@ -16,6 +16,7 @@ url: http://www.epoos.com
 root: /
 permalink: :title/
 permalink_defaults:
+favicon: favicon.ico
 
 # Directory
 source_dir: source
