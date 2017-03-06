@@ -439,4 +439,7 @@ netstat -an | grep "ESTABLISHED"
 $(命令) —— 执行命令
 ```
 
+### 相关链接《linux命令大全》
+
+http://man.linuxde.net/rsync
 
