@@ -47,8 +47,6 @@ console.log(bubbleSort([85,24,63,17,31,17,86,50]));
 
 ### 插入排序
 
-
-
 ``` javascript
 function insertSort(arr) {
   let len = arr.length;

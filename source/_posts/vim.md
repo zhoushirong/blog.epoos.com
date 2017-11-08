@@ -112,7 +112,11 @@ set autochdir               " 自动切换当前目录为当前文件所在的�
 
 
 
+### 格式化代码
 
+``` shell
+gg=G
+```
 
 
 ### Ex模式（Ex Mode）
